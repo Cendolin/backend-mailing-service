@@ -1,12 +1,23 @@
 {
   "name": "backend-mailing-service",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/amqplib": "^0.10.7",
+    "@types/bun": "latest",
+    "@types/nodemailer": "^6.4.17"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.8",
+    "arktype": "^2.1.20",
+    "avvio": "^9.1.0",
+    "consola": "^3.4.2",
+    "envalid": "^8.0.0",
+    "generic-pool": "^3.9.0",
+    "nodemailer": "^7.0.3"
   }
 }
